@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
 
 function App() {
+  const [text, setText] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='counterDiv'>
+      <h3>Counter</h3>
+      {text} <br></br>
+      <button className='btn btn--increase' onClick={() => setText(text+1)}>++</button>
+      <button className='btn btn--zero' onClick={() => setText(0)}>0</button>
+      <button className='btn btn--decrease' onClick={() => setText(text-1)}>--</button>
     </div>
+   
   );
 }
 

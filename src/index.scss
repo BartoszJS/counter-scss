@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.counterDiv{
+  text-align: center;
+  font-size: 32px;
+  border: 1px solid blue;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  font-size: 32px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px 5px 5px 5px;
+
+  &--increase {
+    background-color: green;
+  }
+  &--decrease {
+    background-color: red;
+  }
+  &--zero {
+    background-color: rgb(189, 189, 189);
+  }
+}
